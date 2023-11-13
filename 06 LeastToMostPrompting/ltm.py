@@ -12,7 +12,7 @@ llm = OpenAI(openai_api_key=apikey, max_tokens=1000, streaming=True,
 
 llm(
 
-'''
+    '''
 Q: denken, Maschine
 A: ne
 
@@ -29,6 +29,8 @@ Q: Löw, Menü, Bar, Brot, Tisch, Brei, Kalt, Fax, Reim, Sofa, Party, Brief, Apf
 A:
 '''
 
+    # 2. Attempt. Chain of thought prompt -> too complex
+
     #     '''
     # Q: denken, Maschine
     # A: Der letzte Buchstabe von "denken" ist "n". Der letzte Buchstabe von "Maschine" ist "e". Also ergibt "denken, Maschine" "ne".
@@ -37,7 +39,7 @@ A:
     # A: Der letzte Buchstabe von "lernen" ist "n". Der letzte Buchstabe von "Bewertung" ist "g". Der letzte Buchstabe von "Schlafen" ist "n". Also ergibt "lernen, Bewertung, Schlafen" "ngn".
 
     # Q: künstliche, Intelligenz
-    # A: Der letzte Buchstabe von "künstliche" ist "e". Der letzte Buchstabe von "Intelligenz" ist "z". Also ergibt "künstliche, Intelligenz" "ki".
+    # A: Der letzte Buchstabe von "künstliche" ist "e". Der letzte Buchstabe von "Intelligenz" ist "z". Also ergibt "künstliche, Intelligenz" "ez".
 
     # Q: Transformer, Sprache, Vision
     # A: Der letzte Buchstabe von "Transformer" ist "r". Der letzte Buchstabe von "Sprache" ist "e". Der letzte Buchstabe von "Vision" ist "n". Also ergibt "Transformer, Sprache, Vision" "ren".
@@ -45,6 +47,8 @@ A:
     # Q: Löw, Menü, Bar, Brot, Tisch, Brei, Kalt, Fax, Reim, Sofa, Party, Brief, Apfel, Kino, Interview, Käse, Motor
     # A:
     # '''
+
+    # 3. attempt: least to most -> removing complexity by splitting task into subtasks and concatenating results
 
     # '''
     # Q: denken, Maschine, lernen
