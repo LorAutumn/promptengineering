@@ -13,9 +13,9 @@ print(llm(
     14 verschenkt er an Freunde. Wieviele Äfpel hat er am Ende noch?
     """))
 
-print(llm(
-    """
-    Fritz hat 20 Äpfel. Er isst drei Stück. Danach kauft er 10 Äpfel dazu. 
-    14 verschenkt er an Freunde. Wieviele Äfpel hat er am Ende noch?
-    Denke Schritt für Schritt.
-    """))
+# print(llm(
+#     """
+#     Fritz hat 20 Äpfel. Er isst drei Stück. Danach kauft er 10 Äpfel dazu. 
+#     14 verschenkt er an Freunde. Wieviele Äfpel hat er am Ende noch?
+#     Denke Schritt für Schritt.
+#     """))

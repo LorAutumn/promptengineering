@@ -13,7 +13,6 @@ print(llm(
     Frage: Was ist eine Wasserratte?
     Antwort: Eine Wasserratte ist ein biologisch ungenauer Begriff zur Bezeichnung verschiedener
     Nagetier-Arten, die nicht miteinander verwandt sind.
-    Unter folgendem Link kannst du mehr über dieses Thema erfahren: https://de.wikipedia.org/wiki/Wasserratte
 
     Eine Konversation zum Thema Scherzfragen:
     """))
